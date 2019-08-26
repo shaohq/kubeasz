@@ -21,13 +21,13 @@ Kuboard 是一款免费的基于 Kubernetes 的微服务管理界面。官方文
 ### 安装 Kuboard。
 
 ``` sh
-kubectl apply -f https://raw.githubusercontent.com/eip-work/eip-monitor-repository/master/dashboard/kuboard.yaml
+kubectl apply -f https://kuboard.cn/install-script/kuboard.yaml
 ```
 
 ### 卸载 Kuboard
 
 ``` sh
-kubectl delete -f https://raw.githubusercontent.com/eip-work/eip-monitor-repository/master/dashboard/kuboard.yaml
+kubectl delete -f https://kuboard.cn/install-script/kuboard.yaml
 ```
 
 ## 获取 Token
@@ -136,3 +136,8 @@ kubectl port-forward service/kuboard 8080:80 -n kube-system
 `http://localhost:8080`
 
 输入前一步骤中获得的 token，可进入 **Kuboard 集群概览页**
+
+
+## 参考
+
+[安装 Kuboard](https://kuboard.cn/install/install-dashboard.html)
